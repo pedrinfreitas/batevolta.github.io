@@ -5,63 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
-</head>
+  <link rel="stylesheet" href="style.css">
+  <title>Parâmetros</title>
 
 <body>
-  <h1>Parametros:</h1>
+  <main>
+    <h1 class="title">Parâmetros</h1>
 
-  <div id="itens" style="display: flex; align-items: center; flex-direction: column;">
+    <div id="itens" class="card"></div>
 
+    <div class="card">
+      <div class="card__item">
+        <p class="card__title"> code</p>
+        <input id="id_code" type="text" value="" />
+      </div>
 
-  </div>
+      <div class="card__item">
+        <p class="card__title"> id_token</p>
+        <input id="id_id_token" type="text" value="" />
+      </div>
+    </div>
 
-  <button type="button" onclick="enviar()">Enviar</button>
-  <button type="button" onclick="calc()">abrir calc</button>
+    <div class="card__buttons">
+      <button type="button" onclick="enviar()">Enviar</button>
+      <button type="button" onclick="calc()">abrir calc</button>
+    </div>
+  </main>
 
-  <script>
-    let queryDict = {};
-
-    location.search
-      .substr(1)
-      .split("&")
-      .forEach((e) => (queryDict[e.split("=")[0]] = e.split("=")[1]));
-
-    const {
-      response_type,
-      client_id,
-      redirect_uri,
-      scope,
-      state,
-      nonce,
-      request,
-    } = { ...queryDict };
-
-    console.log(queryDict);
-    //console.log(response_type);
-
-    const itens = Object.keys(queryDict).map((key, i) =>
-      `<div style="display: flex; align-items: center;"><p >${key}      </p><p >${queryDict[key]}</p>        </div>`
-    );
-
-    console.log(itens);
-
-
-
-
-
-    const sectionsItens = document.getElementById('itens');
-    sectionsItens.insertAdjacentHTML('beforeend', itens)
-
-
-    function enviar() {
-      window.location.href = window.location.href = `${this.paramFG7.redirect_uri}&code=${code}&id_token=${id_token}&state=${state}`;
-    }
-
-    function calc() {
-      window.location = "calc://";
-    }
-  </script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>

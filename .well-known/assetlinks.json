@@ -1,0 +1,9 @@
+[{
+"relation": ["delegate_permission/common.handle_all_urls"],
+"target": {
+"namespace": "android_app",
+"package_name": "com.itau",
+"sha256_cert_fingerprints":
+["8B:1C:69:F9:D8:0B:40:50:E6:6C:84:7A:03:65:D4:E1:C0:DA:1D:2D:6E:2D:AD:35:2A:3C:23:74:9E:FA:47:9E"]
+}
+}]

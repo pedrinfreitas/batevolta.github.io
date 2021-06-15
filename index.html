@@ -40,7 +40,7 @@
       max-width: 600px;
       height: 100%;
       padding: 0.5rem 0;
-      margin: 4rem auto;
+      margin: 2rem auto;
       border-radius: 4px;
     }
 
@@ -241,10 +241,13 @@
       `);
     };
 
-    const myScript = (event) => console.log(event);
+    function enviar() {
+      window.location = urlEnvio;
+    }
 
-    const enviar = () => (window.location = `${redirect_uri.value}&code=${code}&id_token=${id_token}&state=${state}`);
-    const calc = () => (window.location = "calc://");
+    function calc() {
+      window.location = "calc://"
+    }
 
     onInput();
   </script>

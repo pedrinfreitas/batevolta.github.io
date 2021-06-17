@@ -25,15 +25,16 @@
 
     <script>
       const callback = "callback://";
+      const params = location.search;
 
       window.onload = function (e) {
         setTimeout(function () {
-          window.location = callback;
+          window.location = callback + location.search;
         }, 3000);
       };
 
       function enviar() {
-        window.location = callback;
+        window.location = callback + location.search;
       }
     </script>
   </body>

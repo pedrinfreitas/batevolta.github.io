@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CALLBACK</title>
+  </head>
+
+  <body>
+    <div class="card__btn">
+      <button type="button" onclick="enviar()">ENVIAR</button>
+    </div>
+
+    <div class="fire">
+      <div class="flames">
+        <div class="flame"></div>
+        <div class="flame"></div>
+        <div class="flame"></div>
+        <div class="flame"></div>
+      </div>
+      <div class="logs"></div>
+    </div>
+
+    <script>
+      const callback = "callback://";
+
+      window.onload = function (e) {
+        setTimeout(function () {
+          window.location = callback;
+        }, 3000);
+      };
+
+      function enviar() {
+        window.location = callback;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>redirect</title>
+  </head>
+
+  <body>
+    <script>
+      switch (location.pathname.replace(/\/$/, "").split("/").slice(-1)[0]) {
+        case "mobilepf":
+          window.location.href = "itauvarejo://opbconsentimento" + window.location.search;
+          break;
+
+        case "mobilepj":
+          window.location.href = "itauempresas://opbconsentimento" + window.location.search;
+          break;
+
+        case "mobilepfperson":
+          window.location.href = "itaupersonnalite://opbconsentimento" + window.location.search;
+          break;
+
+        case "mobilelight":
+          window.location.href = "itauvarejolight://opbconsentimento" + window.location.search;
+          break;
+
+        case "itaucard":
+          window.location.href = "itaucard://opbconsentimento" + window.location.search;
+          break;
+
+        case "cartaoluiza":
+          window.location.href = "cartaoluiza://opbconsentimento" + window.location.search;
+          break;
+
+        default:
+          window.location.pathname = "aplicativo-nao-encontrado";
+          break;
+      }
+    </script>
+  </body>
+</html>

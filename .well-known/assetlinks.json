@@ -1,4 +1,83 @@
-[{
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.itau.aco",
+      "sha256_cert_fingerprints": [
+        "97:81:EF:EB:E1:32:B1:39:EF:9E:3F:DF:A5:39:E2:11:04:B5:52:C1:4D:0B:A7:00:B4:C6:D1:D5:C0:77:9B:EE"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.itau",
+      "sha256_cert_fingerprints": [
+        "8B:1C:69:F9:D8:0B:40:50:E6:6C:84:7A:03:65:D4:E1:C0:DA:1D:2D:6E:2D:AD:35:2A:3C:23:74:9E:FA:47:9E",
+        "97:81:EF:EB:E1:32:B1:39:EF:9E:3F:DF:A5:39:E2:11:04:B5:52:C1:4D:0B:A7:00:B4:C6:D1:D5:C0:77:9B:EE"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.itau.pers",
+      "sha256_cert_fingerprints": [
+        "8B:1C:69:F9:D8:0B:40:50:E6:6C:84:7A:03:65:D4:E1:C0:DA:1D:2D:6E:2D:AD:35:2A:3C:23:74:9E:FA:47:9E",         
+        "97:81:EF:EB:E1:32:B1:39:EF:9E:3F:DF:A5:39:E2:11:04:B5:52:C1:4D:0B:A7:00:B4:C6:D1:D5:C0:77:9B:EE"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.itau.empresas",
+      "sha256_cert_fingerprints": [
+        "0F:30:26:F2:C6:EF:16:BA:8E:0C:1D:D7:9C:B9:EF:6B:A5:E6:A1:1E:EB:F8:ED:56:B2:D6:6A:A7:F2:36:4A:69",         
+        "97:81:EF:EB:E1:32:B1:39:EF:9E:3F:DF:A5:39:E2:11:04:B5:52:C1:4D:0B:A7:00:B4:C6:D1:D5:C0:77:9B:EE"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.cartaoluiza.app",
+      "sha256_cert_fingerprints": [
+        "F0:FA:D6:57:32:D1:C7:42:29:34:C5:54:07:AB:61:6E:97:BF:22:79:EE:EA:74:AD:F0:AB:7C:EE:B1:1A:F0:90",         
+        "97:81:EF:EB:E1:32:B1:39:EF:9E:3F:DF:A5:39:E2:11:04:B5:52:C1:4D:0B:A7:00:B4:C6:D1:D5:C0:77:9B:EE"
+      ]
+    }
+  },
+  {
+  "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.itaucard.activity",
+      "sha256_cert_fingerprints": [
+        "F0:FA:D6:57:32:D1:C7:42:29:34:C5:54:07:AB:61:6E:97:BF:22:79:EE:EA:74:AD:F0:AB:7C:EE:B1:1A:F0:90",         
+        "97:81:EF:EB:E1:32:B1:39:EF:9E:3F:DF:A5:39:E2:11:04:B5:52:C1:4D:0B:A7:00:B4:C6:D1:D5:C0:77:9B:EE"
+      ]
+    }
+  },
+  {
+  "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.itau.light",
+      "sha256_cert_fingerprints": [
+        "92:08:FF:50:14:4A:2A:9B:76:A5:3E:5E:83:94:11:9B:64:6B:7B:58:FC:BC:8A:57:CD:26:48:F1:E1:01:72:F3",         
+        "97:81:EF:EB:E1:32:B1:39:EF:9E:3F:DF:A5:39:E2:11:04:B5:52:C1:4D:0B:A7:00:B4:C6:D1:D5:C0:77:9B:EE"
+      ]
+    }
+  }
+]
+
+/*[{
 "relation": ["delegate_permission/common.handle_all_urls"],
 "target": {
 "namespace": "android_app",
@@ -7,3 +86,4 @@
 ["8B:1C:69:F9:D8:0B:40:50:E6:6C:84:7A:03:65:D4:E1:C0:DA:1D:2D:6E:2D:AD:35:2A:3C:23:74:9E:FA:47:9E"]
 }
 }]
+/*

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lançamento Progressivo</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      margin: 0 1rem;
+      height: calc(100vh - 2rem);
+      justify-content: space-between;
+    }
+
+    .page__img {
+      width: calc(100vw - 1rem);
+    }
+
+    .page__title {
+      margin-top: 1rem;
+      font-family: Itau Display;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      color: #231D19;
+    }
+
+    .page__description {
+      margin-top: 0.5rem;
+      font-family: Itau Text;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #56504C;
+    }
+
+    .page__btn {
+      font-family: Itau Text;
+      font-size: 1rem;
+      line-height: 2rem;
+      height: 3rem;
+      border-radius: 4px;
+      color: #FFFFFF;
+      background: #231D19;
+      width: calc(100vw - 2rem);
+    }
+
+    @media screen and (min-width: 768px) {
+      .page__img {
+        width: 768px;
+        /* margin: auto; */
+      }
+
+      .div__content {
+        align-self: center;
+      }
+
+      .page__title {
+        transition-property: width, height;
+        width: 736px;
+        margin-left: 1rem;
+        font-size: 3rem;
+        line-height: 3.75rem;
+      }
+
+      .page__description {
+        width: 736px;
+        margin-left: 1rem;
+        font-size: 1.65rem;
+        line-height: 2.25rem;
+      }
+
+      .page__btn {
+        width: 736px;
+        font-size: 1.65rem;
+        line-height: 2.25rem;
+        height: 4.5rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="div__content">
+      <div class="page__img">
+
+      </div>
+
+      <h1 class="page__title"> titulo </h1>
+
+      <p class="page__description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci officiis deleniti, deserunt exercitationem cumque veritatis distinctio, officia, quia error nemo accusamus magnam ab ex ullam. Officia voluptates quae obcaecati!</p>
+    </div>
+
+    <div class="div__content">
+      <button type="button" onclick="redirect()" class="page__btn"> enviar </button>
+    </div>
+
+  </div>
+
+  <script>
+    //alterar o "redirect"
+    const regex = /redirect=.+/i;
+
+    var _cookies$filter$;
+
+    const cookies = document.cookie.split(";");
+    const urlEnvio =
+      (_cookies$filter$ = cookies.filter((e) =>
+        e === null || e === void 0 ? void 0 : e.match(regex)
+      )[0]) === null || _cookies$filter$ === void 0
+        ? void 0
+        : _cookies$filter$.split("=")[1];
+
+    function redirect() {
+      urlEnvio ? window.location = urlEnvio : console.log('sem retorno');
+    }
+
+  </script>
+
+</body>
+
+</html>
